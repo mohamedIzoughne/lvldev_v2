@@ -2,6 +2,100 @@
 @tailwind utilities;
 @tailwind components;
 
+@font-face {
+  font-family: 'Amareddine';
+  src: url('./assets/fonts/Amareddine-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Amareddine';
+  src: url('./assets/fonts/Amareddine-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Amareddine';
+  src: url('./assets//fonts/Amareddine-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Amareddine';
+  src: url('./assets//fonts/Amareddine-Book.ttf') format('truetype');
+  font-weight: 350;
+}
+
+body {
+  font-family: 'Amareddine';
+}
+
 img {
   max-width: 100%;
+}
+
+.swiper-pagination-bullet {
+  background-color: white;
+  opacity: 1;
+  border-radius: 999999px;
+  transition: all;
+  transition-duration: 0.2s;
+  transform-origin: left center;
+  display: block;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  @apply bg-secondary;
+  width: 40px;
+}
+
+.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 15px;
+}
+
+.overlay-1 {
+  background-image: url('./assets/hero/section.png');
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.15;
+}
+
+.overlay-2 {
+  background-image: url('./assets/hero/section-2.svg');
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.1;
+}
+
+.animated {
+  animation: 20s linear infinite running slidein;
+  left: 0;
+  transform: translateX(-100%);
+}
+
+.animated-2 {
+  animation: 20s linear infinite running slidein;
+  left: 0;
+  transform: translateX(-100%);
+  animation-delay: 4s;
+}
+
+@keyframes slidein {
+  0% {
+    left: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    left: 100%;
+    transform: translateX(100%);
+  }
 }

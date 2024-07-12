@@ -10,6 +10,9 @@ export default {
       borderRadius: {
         main: '15px',
       },
+      fontWeight: {
+        book: '350',
+      },
     },
     container: {
       center: true,
