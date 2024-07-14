@@ -8,7 +8,6 @@ import MainSection from './components/hero/MainSection'
 import Motivation from './components/Motivation'
 import Services from './components/services/Services'
 import './i18n'
-
 function App() {
   return (
     <>
