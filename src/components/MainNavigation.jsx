@@ -16,8 +16,8 @@ const NavItem = ({ children }) => {
 const MainNavigation = () => {
   return (
     <nav className='flex items-center relative z-30'>
-      <button className='language ml-2 bg-main rounded-main w-[36px] h-[35px] flex justify-center items-center'>
-        <img className='w-[15px]' src={icon} alt='' />
+      <button className='language ml-5 bg-main rounded-main w-[55px] aspect-square flex justify-center items-center'>
+        <img className='w-[25px]' src={icon} alt='' />
       </button>
       <div className='flex flex-grow bg-main justify-between px-3 items-center rounded-main ml-2'>
         <button className='logo flex items-center'>

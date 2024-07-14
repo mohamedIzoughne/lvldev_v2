@@ -6,13 +6,17 @@ import 'swiper/css/pagination'
 import { Navigation, Pagination } from 'swiper/modules'
 import WatchVideo from './WatchVideo'
 import Features from './Features'
+import { useTranslation } from 'react-i18next'
 
 const MainSection = () => {
+  const { t, i18n } = useTranslation()
+
   return (
-    <section className='main tracking-[-2%] px-2 py-4 mt-2 min-h-[492px] flex items-center'>
+    <section className='main tracking-[-2%] px-2 py-4 min-h-[492px] flex items-center mt-[30px]'>
       <div className='first'>
         <h1 className='heading  text-[96px] tracking-[-2%] leading-[1.1] font-bold pr-3 relative z-10'>
-          رفيقك في عالم <br /> الديجيتال
+          {/* رفيقك في عالم <br /> الديجيتال */}
+          {t('welcome')}
         </h1>
         <WatchVideo />
         <Features />

@@ -26,6 +26,12 @@
   font-weight: 350;
 }
 
+html {
+  direction: rtl;
+  color: white;
+  font-family: cursive;
+}
+
 body {
   font-family: 'Amareddine';
 }
@@ -63,17 +69,17 @@ img {
 }
 
 .overlay-1 {
-  background-image: url('./assets/hero/section.png');
+  background-image: url('./assets/hero/hero-1.svg');
   background-size: cover;
   background-position: center center;
   opacity: 0.15;
 }
 
 .overlay-2 {
-  background-image: url('./assets/hero/section-2.svg');
+  background-image: url('./assets/hero/hero-2.svg');
   background-size: cover;
   background-position: center center;
-  opacity: 0.1;
+  opacity: 0.15;
 }
 
 .animated {

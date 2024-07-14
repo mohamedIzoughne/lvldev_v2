@@ -9,30 +9,32 @@ import 'swiper/css'
 
 const Services = () => {
   return (
-    <section className='bg-main px-2 py-5 rounded-main relative mt-10'>
-      <MainTitle className='text-5xl'>خدماتنا</MainTitle>
-      <div className='services-field'>
-        <Swiper spaceBetween={20} slidesPerView={1}>
-          <SwiperSlide>
-            <div className='service mx-1'>
-              <div className='image-holder'>
-                <img src={service1} className='w-full' alt='' />
+    <section className='bg-main px-2 py-5 relative pt-[100px]'>
+      <div className='container'>
+        <MainTitle className='text-5xl'>خدماتنا</MainTitle>
+        <div className='services-field'>
+          <Swiper spaceBetween={20} slidesPerView={1}>
+            <SwiperSlide>
+              <div className='service mx-1'>
+                <div className='image-holder'>
+                  <img src={service1} className='w-full' alt='' />
+                </div>
               </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className='service mx-1'>
-              <div className='image-holder'>
-                <img src={service1} alt='' />
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className='service mx-1'>
+                <div className='image-holder'>
+                  <img src={service1} alt='' />
+                </div>
               </div>
+            </SwiperSlide>
+            <div className='controller-next-prev flex justify-between w-[90%] mx-auto bg-gray-600 bg-opacity-60 p-1 rounded-full font-bold text-2xl'>
+              <PrevSlideButton />
+              <p>تطوير المواقع الالكترونية</p>
+              <NextSlideButton />
             </div>
-          </SwiperSlide>
-          <div className='controller-next-prev flex justify-between w-[90%] mx-auto bg-[#414141] p-1 rounded-full font-bold text-2xl'>
-            <PrevSlideButton />
-            <p>تطوير المواقع الالكترونية</p>
-            <NextSlideButton />
-          </div>
-        </Swiper>
+          </Swiper>
+        </div>
       </div>
     </section>
   )

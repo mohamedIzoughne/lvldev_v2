@@ -11,7 +11,7 @@ const NextSlideButton = () => {
   return (
     <button
       onClick={nextHandler}
-      className='prev w-[26px] aspect-square rounded-full border-2 border-solid border-white text-white flex justify-center items-center text-2xl'
+      className='prev w-[36px] aspect-square rounded-full border-2 border-solid border-white text-white flex justify-center items-center text-3xl'
     >
       <IoMdArrowDropleft />
     </button>
