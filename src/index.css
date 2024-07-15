@@ -105,3 +105,9 @@ img {
     transform: translateX(100%);
   }
 }
+
+.services-image-holder {
+  aspect-ratio: 1232.57/556;
+  overflow: hidden;
+  border-radius: 54px;
+}

@@ -4,6 +4,7 @@ import logoDesk from '../assets/logo-desktop.svg'
 import MainButton from './Ui/MainButton'
 import LanguageSelect from './Ui/LanguageSelect'
 import moroccoImage from '../assets/morocco.svg'
+import { useTranslation } from 'react-i18next'
 
 const NavItem = ({ children }) => {
   return (
@@ -14,6 +15,8 @@ const NavItem = ({ children }) => {
 }
 
 const MainNavigation = () => {
+  const { t } = useTranslation()
+
   return (
     <nav className='flex items-center relative z-30'>
       <button className='language ml-5 bg-main rounded-main w-[55px] aspect-square flex justify-center items-center'>
@@ -27,17 +30,17 @@ const MainNavigation = () => {
         </button>
         <ul className='flex py-2 px-1 rounded-main text-[15px] justify-around'>
           <NavItem className='services'>
-            <a href=''>الخدمات</a>
+            <a href=''>{t('navbar.0')}</a>
           </NavItem>
           <NavItem className='main'>
-            <a href=''>الرئيسية</a>
+            <a href=''>{t('navbar.1')}</a>
           </NavItem>
           <NavItem className='work'>
-            <a href=''>أعمالنا</a>
+            <a href=''>{t('navbar.2')}</a>
           </NavItem>
         </ul>
         <MainButton className='min-w-[68px] h-[31px] text-2xl'>
-          <a href=''>تواصل معنا</a>
+          <a href=''>{t('navbar.3')}</a>
         </MainButton>
       </div>
       <LanguageSelect />

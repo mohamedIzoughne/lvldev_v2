@@ -1,3 +1,42 @@
 {
-  "welcome": "Welcome to your mate in digital world"
+  "navbar": ["Services", "Home", "Our Work", "Contact Us"],
+  "welcome": ["Your Digital", "Companion"],
+  "siteDescription": "Manage all your tasks today with our unified cloud software, designed to bridge gaps between departments and boost efficiency.",
+  "siteDescriptionStartNowButton": "Start Now",
+  "siteDescriptionWatchVideoButton": "Watch Video",
+  "features": [
+    {
+      "key": "Support & Guidance",
+      "value": "Free"
+    },
+    {
+      "key": "Trial Version",
+      "value": "+ 1 month"
+    },
+    {
+      "key": "Latest Technologies"
+    }
+  ],
+  "motivation": [
+    {
+      "title": "Join us now and elevate your dreams.",
+      "desc": "Be a pioneer in Souss Massa by using our digital services to ensure your project's success and enhance your presence.",
+      "button": "Sign Up",
+      "inputPlaceholder": "Phone or Email",
+      "privacyLetter": ["We value your", "privacy and security"]
+    },
+    {
+      "title": "Our Team and Goals",
+      "desc": "We are the future of Souss Massa, dedicated to improving electronic services and empowering businesses to manage their activities...",
+      "button": "Read More..."
+    },
+    {
+      "title": ["Follow Us on", "Social Media"],
+      "hashTag": ["Use hashtag: ", "#lvldev"]
+    }
+  ],
+  "services": {
+    "title": "Our Services",
+    "serviceList": ["Website Development"]
+  }
 }

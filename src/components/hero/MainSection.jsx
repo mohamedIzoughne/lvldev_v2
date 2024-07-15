@@ -16,7 +16,9 @@ const MainSection = () => {
       <div className='first'>
         <h1 className='heading  text-[96px] tracking-[-2%] leading-[1.1] font-bold pr-3 relative z-10'>
           {/* رفيقك في عالم <br /> الديجيتال */}
-          {t('welcome')}
+          {t('welcome.0')}
+          <br />
+          {t('welcome.1')}
         </h1>
         <WatchVideo />
         <Features />
@@ -37,9 +39,7 @@ const MainSection = () => {
             <div className='main-image justify-center items-center w-full'>
               <img src={mainImage} className=' w-11/12' alt='' />
             </div>
-            <p className='font-bold text-center'>
-              برامج تسيير وتدبير المقاولات
-            </p>
+            <p className='font-bold text-center'>{t('heroServices.0')}</p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
