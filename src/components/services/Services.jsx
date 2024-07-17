@@ -11,9 +11,9 @@ import { useTranslation } from 'react-i18next'
 const Services = () => {
   const { t } = useTranslation()
   return (
-    <section className='bg-main px-2 py-20 relative pt-[100px]'>
+    <section className='bg-main px-2 py-15 relative pt-[100px]'>
       <div className='w-[1200px] mx-auto relative'>
-        <MainTitle className='text-5xl mb-4'>{t('services.title')}</MainTitle>
+        <MainTitle className='text-6xl mb-10'>{t('services.title')}</MainTitle>
         <div className='services-field relative items-center p-2'>
           <img
             className='absolute left-0 top-0 w-full h-full'

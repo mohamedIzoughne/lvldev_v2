@@ -26,6 +26,16 @@
   font-weight: 350;
 }
 
+@font-face {
+  font-family: 'AlHadari';
+  src: url('./assets/fonts/AlHadari-bold.ttf');
+}
+
+.hadari {
+  font-family: 'AlHadari';
+  font-weight: bold;
+}
+
 html {
   direction: rtl;
   color: white;

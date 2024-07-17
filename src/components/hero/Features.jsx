@@ -4,15 +4,15 @@ import { technologyImages } from '../../data'
 const Features = () => {
   const { t } = useTranslation()
   return (
-    <section className='mt-2 text-white py-3 relative'>
-      <ul className='w-fit flex gap-2 mx-auto'>
+    <section className='mt-2 mr-auto flex-grow text-white py-3 relative'>
+      <ul className='w-full flex justify-between gap-2 mx-auto'>
         <li className='w-[201px] bg-opacity-20 min-h-[63px] rounded-[12.36px] p-2 text-center'>
           <p className='text-[21px]'>{t('features.0.key')}</p>
           <h1 className='font-bold text-4xl'>{t('features.0.value')}</h1>
         </li>
         <li className='w-[201px] min-h-[63px] rounded-main p-2 text-center bg-white  bg-opacity-20'>
           <p className='text-[21px]'>{t('features.1.key')}</p>
-          <h1 className='font-bold text-4xl' dir='ltr'>
+          <h1 className='font-bold text-4xl font-sans' dir='ltr'>
             {t('features.1.value')}
           </h1>
         </li>

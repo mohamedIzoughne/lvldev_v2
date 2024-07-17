@@ -22,7 +22,9 @@ const SocialMediaSharing = ({ t }) => {
           {/* استخدم هاشتاغ: */}
           {t('motivation.2.hashTag.0')}
           <br />
-          <span className='font-bold'>{t('motivation.2.hashTag.1')}</span>
+          <span className='font-bold font-sans'>
+            {t('motivation.2.hashTag.1')}
+          </span>
         </p>
       </div>
       <div className='social-media-platforms bg-secondary text-white h-[140px] px-[6px] py-2 flex flex-col mt-auto justify-around items-center rounded-md text-4xl'>
@@ -45,7 +47,7 @@ const Motivation = () => {
 
   return (
     <ul className='relative flex justify-around flex-wrap mt-[80px]'>
-      <li className=' bg-white bg-opacity-20 w-[690px] p-5 rounded-[39px]'>
+      <li className=' bg-white bg-opacity-20 w-[660px] p-5 rounded-[39px]'>
         <h1 className='text-4xl font-bold  tracking-widest'>
           {t('motivation.0.title')}
         </h1>
@@ -65,7 +67,7 @@ const Motivation = () => {
           <b>{t('motivation.0.privacyLetter.1')} </b>
         </p>
       </li>
-      <li className=' bg-white bg-opacity-20 w-[390px]  p-5 rounded-[39px]'>
+      <li className=' bg-white bg-opacity-20 w-[370px]  p-5 rounded-[39px]'>
         <h1 className='text-4xl font-bold  tracking-widest'>
           {/* فريقنا وأهدافنا */}
           {t('motivation.1.title')}
