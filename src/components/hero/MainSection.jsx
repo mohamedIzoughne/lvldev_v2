@@ -3,13 +3,38 @@ import mainImage from '../../assets/hero/cropped-imagepng.png'
 
 import 'swiper/css'
 import 'swiper/css/pagination'
+import 'swiper/css/navigation'
 import { Navigation, Pagination } from 'swiper/modules'
 import WatchVideo from './WatchVideo'
 import Features from './Features'
 import { useTranslation } from 'react-i18next'
+import { useRef, useCallback, useState } from 'react'
+import { IoIosArrowDroprightCircle, IoIosArrowDropleftCircle } from "react-icons/io";
+
+
 
 const MainSection = () => {
   const { t, i18n } = useTranslation()
+  const sliderRef = useRef(null);
+  const [reachedBeg, setReachedBeg] = useState(true)
+  const [reachedEnd, setReachedEnd] = useState(false)
+  const handlePrev = () => {
+    if (!sliderRef.current) return;
+    if (reachedBeg) {
+      setReachedBeg(false)
+    }
+    sliderRef.current.swiper.slideNext();
+  }
+  
+  const handleNext = () => {
+    if (!sliderRef.current) return;
+    
+    if (reachedEnd) {
+      setReachedEnd(false)
+    }
+    sliderRef.current.swiper.slidePrev();
+  }
+
 
   return (
     <section className='main tracking-[-2%] px-2 py-4 min-h-[492px] mt-[30px]'>
@@ -22,11 +47,15 @@ const MainSection = () => {
             {t('welcome.1')}
           </h1>
         </div>
+        <div className='relative'>
         <Swiper
+          ref={sliderRef}
           className='min-h-[290px] mt-[35px] max-w-[500px] ml-0'
-          modules={[Pagination]}
+          modules={[Pagination, Navigation]}
           pagination
           spaceBetween={20}
+          onReachBeginning={() => {setReachedBeg(true)}}
+          onReachEnd={() => {setReachedEnd(true)}}
           breakpoints={{
             0: {
               slidesPerView: 1,
@@ -72,8 +101,11 @@ const MainSection = () => {
             </div>
           </SwiperSlide>
         </Swiper>
+            <button className={"next-arrow cursor-pointer absolute -left-[15px] top-[45%] text-5xl z-30" + (reachedEnd ? ' opacity-50' : '')} onClick={handlePrev}><IoIosArrowDropleftCircle className='text-[#C0BBB9]'/></button>
+            <button className={"prev-arrow cursor-pointer absolute -right-[15px] top-[45%] text-5xl z-30" +  (reachedBeg ? ' opacity-60' : '')} onClick={handleNext}><IoIosArrowDroprightCircle  className='text-[#C0BBB9] text-white'/></button>
+        </div>
       </div>
-      <div className='flex items-start justify-between mt-10'>
+      <div className=' mt-10'>
         <WatchVideo />
         <Features />
       </div>

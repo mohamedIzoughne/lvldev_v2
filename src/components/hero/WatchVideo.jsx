@@ -12,11 +12,19 @@ const WatchVideo = () => {
         <button>
           {t('siteDescriptionStartNowButton')}
           <span className='mr-1'>»</span>
+          
         </button>
-        <MainButton className='h-[40px]'>
+        <MainButton>
           <p>{t('siteDescriptionWatchVideoButton')}</p>
           <IoMdArrowDropright />
         </MainButton>
+        {/* <MainButton className='btn-main'>
+          <p>{t('siteDescriptionWatchVideoButton')}</p>
+          <div className="border"></div>
+          <IoMdArrowDropright />
+        </MainButton> */}
+          
+          {/* </div> */}
       </div>
     </div>
   )

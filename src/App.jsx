@@ -18,7 +18,7 @@ function App() {
           <div className='container'>
             <MainNavigation />
             <MainSection />
-            <Motivation />
+            {/* <Motivation /> */}
           </div>
         </div>
         <Services />
